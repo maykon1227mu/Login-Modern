@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+}
+.nav-box {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+.title {
+    font-weight: 300;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+.title span {
+    color:  rgb(187, 187, 187);
+    font-weight: 600;
+}
+.nav-box img {
+    width: 150px;
+}
+.nav-box button {
+    margin-top: 40px;
+    border-radius: 90px;
+    text-decoration: none;
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s;
+    border: none;
+}
+.box-left.box-left.dark-mode .button-nav {
+    background-color: var(--black);
+    color: var(--black);
+} 
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+}
+.box-left {
+    transition: 1s;
+    display: flex;
+    flex-direction: column;align-items: center;
+    width: 40%;
+    height: 100%;
+    background-color: var(--black);
+}
+.box-right {
+    width: 60%;
+    background-color: var(--black);
+    background-image: url(../assets/videos/video1.gif);
+    background-position: center;
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.input-box {
+    display: flex;
+    align-items: end;
+    width: 320px;
+    height: 40px;
+    border-bottom: 3px solid var(--white);
+}
+.input-box i {
+    font-size: 20px;
+}
+input {
+    color: var(--white);
+    border: none;
+    background-color: transparent;
+    width: 300px;
+    height: 40px;
+
+}
+
+.set-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.set-box label {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.button-box {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+.button-box button {
+    font-size: 15px;
+    padding: 5px 32px;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 8px;
+    border-bottom-right-radius: 16px;
+}
+
+.box-left.dark-mode {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.box-left.dark-mode .input-box {
+    border-bottom: 3px solid var(--black);
+}
